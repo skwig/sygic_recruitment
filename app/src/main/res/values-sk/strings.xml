@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SygicRecruitment</string>
+
+    <string name="title_department">Oddelenie</string>
+
+    <string name="text_employee_department">Oddelenie</string>
+    <string name="text_employee_position">Pozícia</string>
+    <string name="text_employee_age">Vek</string>
+    <string name="text_employee_name">Meno</string>
+    <string name="text_no_items_loaded">Nepodarilo sa načítať zamestnancov</string>
+
+    <string name="button_retry">ZNOVA</string>
+
+    <string name="temp_18_years_old">18 rokov</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="employee"
+            type="sk.brecka.sygicrecruitment.model.business.Employee"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/employee_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:foreground="@drawable/selector">
+
+        <ImageView
+            android:id="@+id/icon_image_view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:transitionName="@string/transition_employee_image"/>
+
+        <TextView
+            android:id="@+id/full_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/icon_image_view"
+            android:paddingLeft="8dp"
+            android:paddingTop="12dp"
+            android:text="@{employee.firstName +` `+ employee.lastName}"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/age_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/full_name_text_view"
+            android:layout_below="@+id/full_name_text_view"
+            android:layout_toRightOf="@+id/icon_image_view"
+            android:paddingLeft="8dp"
+            android:text="@string/temp_18_years_old"/>
+
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@android:color/white"-->
+    <!--android:elevation="3dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/icon_image_view"-->
+    <!--android:layout_width="64dp"-->
+    <!--android:layout_height="64dp"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:src="@drawable/ic_person_outline_black_24dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/full_name_text_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_toRightOf="@+id/icon_image_view"-->
+    <!--android:paddingLeft="8dp"-->
+    <!--android:text="@{employee.firstName +` `+ employee.lastName}"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold"/>-->
+
+    <!--</RelativeLayout>-->
+</layout>

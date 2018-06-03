@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_primary">@color/gray_900</color>
+    <color name="text_primary_white">@color/white</color>
+
+    <color name="tint_selected">@color/black_a10</color>
+
+    <color name="toolbarTitleColor">@color/text_primary_white</color>
+    <color name="toolbarSubtitleColor">@color/white_a80</color>
+    <color name="toolbarIconColor">@color/text_primary_white</color>
+</resources>
